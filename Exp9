@@ -1,0 +1,92 @@
+package prcatical_9; 
+
+import java.util.*; 
+
+public class Exception_Handling { 
+
+ public static void main(String[] args) { 
+
+ try 
+
+ { 
+
+ int i=50/0; 
+
+ System.out.println(i); 
+
+ } 
+
+ catch(ArithmeticException e) 
+
+ { 
+
+ System.out.println("Division by 0>.<"); 
+
+ 
+
+ } 
+
+ try 
+
+ {
+int a[]=new int[5]; 
+
+ System.out.println(a[6]); 
+
+ 
+
+ } 
+
+ catch(ArrayIndexOutOfBoundsException e) 
+
+ { 
+
+ System.out.println("Invalid Index :o"); 
+
+ 
+
+ } 
+
+ try 
+
+ { 
+
+ String str=null; 
+
+ System.out.println(str.length()); 
+
+ 
+
+ } 
+
+ catch(NullPointerException e) 
+
+ { 
+
+ System.out.println("String Empty :("); 
+
+ } 
+
+ try 
+
+ { 
+
+ int j=Integer.parseInt("abc"); 
+
+ System.out.println(j); 
+
+ } 
+
+ catch(NumberFormatException e) 
+
+ { 
+
+ System.out.println(" Number cannot include Alphabates O_o"); 
+
+ 
+
+ } 
+
+ } 
+
+ }
