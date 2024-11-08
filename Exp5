@@ -1,0 +1,175 @@
+import java.util.Scanner; 
+
+public class Sorting { 
+
+ void sortInteger(int a[]) 
+
+ { 
+
+ for(int i=0;i<a.length;i++) 
+
+ { 
+
+ for(int j=0;j<a.length;j++) 
+
+ { 
+
+ if(a[i]>a[j]) 
+
+ { 
+
+ int temp=a[i]; 
+
+ a[i]=a[j]; 
+
+ a[j]=temp; 
+
+ 
+
+ } 
+
+ } 
+
+ } 
+
+ 
+
+ }
+void sortString(String str[]) 
+
+ { 
+
+ String temp; 
+
+ for(int i=0;i<str.length;i++) 
+
+ { 
+
+ for(int j=0;j<str.length;j++) 
+
+ { 
+
+ if(str[i].compareToIgnoreCase(str[j])>0) 
+
+ { 
+
+ temp=str[i]; 
+
+ str[i]=str[j]; 
+
+ str[j]=temp; 
+
+ 
+
+ } 
+
+ } 
+
+ } 
+
+ } 
+
+ public static void main(String[] args) { 
+
+ // TODO Auto-generated method stub 
+
+ Scanner sc=new Scanner(System.in); 
+
+ Sorting obj=new Sorting(); 
+
+ int choise; 
+
+ do 
+
+ { 
+
+ System.out.println(" \n\n1.Sort nteger \n 2.Sort String \n 3.Exit"); 
+
+ System.out.println("enter the your choise"); 
+
+ choise=sc.nextInt(); 
+
+ switch(choise) 
+
+ { 
+
+ case 1: 
+
+ System.out.println(" Enter the size of array"); 
+
+ int n=sc.nextInt(); 
+
+ System.out.println("Enter the numbers"); 
+
+ int arr1[]=new int[n]; 
+
+ for(int i=0;i<n;i++) 
+
+ { 
+
+ arr1[i]=sc.nextInt(); 
+
+ 
+
+ } 
+
+ obj.sortInteger(arr1); 
+
+ System.out.println(" Sorted number are : "); 
+
+ for(int i=0;i<n;i++) 
+
+ { 
+
+ System.out.println(arr1[i]+" "); 
+
+ 
+
+ } 
+
+ break;
+case 2: 
+
+ System.out.println(" Entr the size of array"); 
+
+ int n2=sc.nextInt(); 
+
+ System.out.println("Enter the String"); 
+
+ String arr2[]=new String[n2]; 
+
+ for(int i=0;i<n2;i++) 
+
+ { 
+
+ arr2[i]=sc.next(); 
+
+ 
+
+ } 
+
+ obj.sortString(arr2); 
+
+ System.out.println(" Sorted integer are : "); 
+
+ for(int i=0;i<n2;i++) 
+
+ { 
+
+ System.out.println(arr2[i]+" "); 
+
+ 
+
+ } 
+
+ break; 
+
+ } 
+
+ } 
+
+ while(choise !=3); 
+
+ } 
+
+}
