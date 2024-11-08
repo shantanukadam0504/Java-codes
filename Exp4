@@ -1,0 +1,64 @@
+ 
+
+ public class Box { 
+
+ double length ,width,height; 
+
+ Box(double l,double w,double h) 
+
+ { 
+
+ length=l; 
+
+ width=w; 
+
+ height=h; 
+
+ 
+
+ } 
+
+ Box() 
+
+ { 
+
+ length=19; 
+
+ width=43; 
+
+ height=23; 
+
+ } 
+
+ Box(double len) 
+
+ { 
+
+ length=width=height=len; 
+
+ } 
+
+ double volume() 
+
+ { 
+
+ return length*width*height; 
+
+ } 
+
+ public static void main(String[] args) { 
+
+ // TODO Auto-generated method stub
+Box obj1=new Box(10,34,55); 
+ Box obj2=new Box(); 
+ Box obj3=new Box(66); 
+ double vol; 
+ vol=obj1.volume(); 
+ System.out.println("volume of box 1 is :"+vol); 
+ vol=obj2.volume(); 
+ System.out.println(" Volume of box 2 is :"+vol); 
+ vol=obj3.volume(); 
+ System.out.println("volume of box 3 is :"+vol); 
+ 
+} 
+}
