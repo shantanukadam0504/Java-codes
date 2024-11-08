@@ -1,0 +1,85 @@
+1. To find a factorial of number 
+package first; 
+import java.util.Scanner; 
+public class factorial { 
+ public static void main(String[] args) { 
+ // TODO Auto-generated method stub 
+ int i,no; 
+ int fact =1; 
+ Scanner sc = new Scanner(System.in); 
+ System.out.println(" enter the number"); 
+ no = sc.nextInt(); 
+ for( i=1;i<=no;i++) 
+ { 
+ fact=fact*i; 
+ } 
+ System.out.println(" factorial of number is :" +fact); 
+ } 
+} 
+//2. Display 50 prime no 
+package primeno; 
+public class PrimeNo { 
+ public static void main(String[] args) { 
+ // TODO Auto-generated method stub 
+ int n=3, count=1, i=2; 
+ while (count<50) 
+ { 
+ for (i=2; i<n; i++) 
+ { 
+ if(n%i==0) 
+ { 
+ break; 
+ } 
+ } 
+ if(i==n) 
+ { 
+ System.out.println(n); 
+ count++; 
+ } 
+ n++; 
+ } 
+ } 
+}
+
+
+Dept of Elect. & Telecomm.
+
+Hope Foundation’s International Institute of Information Technology, 8 
+
+Pune
+
+//3.To find sum & average of n number 
+
+package second; 
+
+import java.util.Scanner; 
+
+public class SumAverage { 
+
+ public static void main(String[] args) { 
+
+ // TODO Auto-generated method stub 
+
+ int i,n,sum=0; 
+
+ Scanner sc= new Scanner (System.in); 
+
+ System.out.println("how many number want to enter"); 
+
+ n=sc.nextInt(); 
+
+ //System.out.println(" Enter those number:"); 
+
+ for(i=0;i<n;i++) { 
+
+ sum=sum+i; 
+
+ } 
+
+ System.out.println("sum of those number is"+sum); 
+
+ System.out.println("Average of those number is:"+sum/n); 
+
+ } 
+
+}
