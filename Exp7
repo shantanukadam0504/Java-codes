@@ -1,0 +1,149 @@
+Write a java program to create a player class inherit the Cricket_player, football_player, 
+
+hockey_player from xyz class 
+
+package practical_7; 
+
+import java.util.Scanner;
+class xyz { 
+
+ String name; 
+
+ int age; 
+
+ xyz(String n,int a) 
+
+ { 
+
+ name=n; 
+
+ age=a; 
+
+ 
+
+ } 
+
+ void show() 
+
+ { 
+
+ System.out.println(" "); 
+
+ System.out.println(" player name " +name); 
+
+ System.out.println("Age "+age); 
+
+ } 
+
+} 
+
+class cricket_player extends xyz 
+
+{ 
+
+ String type; 
+
+ cricket_player(String n,String t, int a) { 
+
+ super(n, a); 
+
+ type=t; 
+
+ 
+
+ } 
+
+ public void show() 
+
+ { 
+
+ super.show(); 
+
+ System.out.println(" Player type : "+type); 
+
+ 
+
+ } 
+
+ 
+
+} 
+
+class football_player extends xyz 
+
+{ 
+
+ String type; 
+
+ football_player(String n,String t, int a) { 
+
+ super(n, a); 
+
+ type=t; 
+
+ } 
+
+ public void show() 
+
+ { 
+
+ super.show(); 
+
+ System.out.println("plater type "+type); 
+
+ } 
+
+ 
+
+}
+class hockey_player extends xyz 
+
+{ 
+
+ String type; 
+
+ hockey_player(String n,String t, int a) { 
+
+ super(n, a); 
+
+ type=t; 
+
+ } 
+
+ public void show() 
+
+ { 
+
+ super.show(); 
+
+ System.out.println("Player type "+type); 
+
+ } 
+
+ 
+
+} 
+
+public class Player { 
+
+ 
+
+ public static void main(String[] args) { 
+
+ // TODO Auto-generated method stub 
+
+ cricket_player c=new cricket_player("virat","cricket",27); 
+
+ football_player f=new football_player("yash","football",43); 
+
+ hockey_player h=new hockey_player(" ajay","hockey",42); 
+
+ c.show(); 
+
+ f.show(); 
+
+ h.show(); 
+
+ } 
+
+}
